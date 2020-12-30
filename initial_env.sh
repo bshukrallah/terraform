@@ -12,12 +12,13 @@ wget https://raw.githubusercontent.com/linuxacademy/content-deploying-to-aws-ans
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/providers.tf
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/networks.tf
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/variables.tf
+wget https://raw.githubusercontent.com/bshukrallah/terraform/master/security_groups.tf
 mv ansible.cfg deploy_iac_tf_ansible/ansible.cfg
 mv providers.tf deploy_iac_tf_ansible/providers.tf
 mv networks.tf deploy_iac_tf_ansible/networks.tf
 mv variables.tf deploy_iac_tf_ansible/variables.tf
 
-echo "This will now configure AWS (y/n)"
+echo "This will now configure AWS"
 
 aws configure
 

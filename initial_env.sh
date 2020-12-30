@@ -25,5 +25,5 @@ echo "this will now initialize terraform"
 
 cd deploy_iac_tf_ansible
 terraform init
-terraform plan
+terraform apply
 echo END

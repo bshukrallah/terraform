@@ -62,6 +62,9 @@ egress {
     protocol = "-1"
     cidr_blocks = ["0.0.0.0/0"]
     }
+tags = {
+    Name = "Jenkins SG"
+    }
 }
 
 
@@ -91,4 +94,7 @@ egress {
     protocol = "-1"
     cidr_blocks = ["0.0.0.0/0"]
     }
+tags = {
+    Name = "Jenkins SG Oregon"
+    }    
 }

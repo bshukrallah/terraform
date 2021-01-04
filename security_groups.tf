@@ -70,7 +70,7 @@ resource "aws_security_group" "jenkins-sg-oregon" {
     provider = aws.region-worker
     name = "jenkins-sg-oregon"
     description = "Allow Port 8080 & SSH 22"
-    vpc_id = aws_vpc.vpc_master.id
+    vpc_id = aws_vpc.vpc_master_oregon.id
 ingress {
     description = "SSH 22 from our public IP"
     from_port = 22

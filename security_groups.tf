@@ -47,7 +47,7 @@ ingress {
     from_port = 8080
     to_port = 8080
     protocol = "tcp"
-    cidr_blocks = [aws_security_group.lb-sg.id]
+    security_groups = [aws_security_group.lb-sg.id]
     }
 ingress {
     description = "Allow traffic from us-west-2"

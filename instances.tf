@@ -39,7 +39,7 @@ resource "aws_instance" "jenkins-master" {
 }
 
 #Create and bootstrap EC2 in us-west-2
-resource "aws_instance" "jenkins-worker" {
+resource "aws_instance" "jenkins-worker-oregon" {
     provider = aws.region-worker
     count = var.workers-count
     ami = data.aws_ssm_parameter.linuxAmiOregon.value

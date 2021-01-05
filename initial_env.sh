@@ -13,11 +13,15 @@ wget https://raw.githubusercontent.com/bshukrallah/terraform/master/providers.tf
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/networks.tf
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/variables.tf
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/security_groups.tf
+wget https://raw.githubusercontent.com/bshukrallah/terraform/master/outputs.tf
+wget https://raw.githubusercontent.com/bshukrallah/terraform/master/instances.tf
 mv ansible.cfg deploy_iac_tf_ansible/ansible.cfg
 mv providers.tf deploy_iac_tf_ansible/providers.tf
 mv networks.tf deploy_iac_tf_ansible/networks.tf
 mv variables.tf deploy_iac_tf_ansible/variables.tf
-
+mv security_groups.tf deploy_iac_tf_ansible/security_groups.tf
+mv instances.tf deploy_iac_tf_ansible/instances.tf
+mv outputs.tf deploy_iac_tf_ansible/outputs.tf
 echo "This will now configure AWS"
 
 aws configure

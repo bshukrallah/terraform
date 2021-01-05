@@ -14,6 +14,7 @@ mkdir deploy_iac_tf_ansible/ansible_templates
 mkdir deploy_iac_tf_ansible/ansible_templates/inventory_aws/
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/ansible.cfg
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/providers.tf
+wget https://raw.githubusercontent.com/bshukrallah/terraform/master/alb.tf
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/networks.tf
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/variables.tf
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/security_groups.tf
@@ -23,6 +24,7 @@ wget https://raw.githubusercontent.com/bshukrallah/terraform/master/ansible_temp
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/ansible_templates/jenkins-worker-sample.yml
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/ansible_templates/inventory_aws/tf_aws_ec2.yml
 mv ansible.cfg deploy_iac_tf_ansible/ansible.cfg
+mv alb.tf deploy_iac_tf_ansible/alb.tf
 mv providers.tf deploy_iac_tf_ansible/providers.tf
 mv networks.tf deploy_iac_tf_ansible/networks.tf
 mv variables.tf deploy_iac_tf_ansible/variables.tf

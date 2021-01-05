@@ -43,9 +43,9 @@ ingress {
     cidr_blocks = [var.external_ip]
     }
 ingress {
-    description = "Allow Port 8080"
-    from_port = 8080
-    to_port = 8080
+    description = "Allow Webserver Port"
+    from_port = var.webserver-port
+    to_port = var.webserver-port
     protocol = "tcp"
     security_groups = [aws_security_group.lb-sg.id]
     }

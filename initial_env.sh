@@ -10,7 +10,7 @@ pip3 install ansible --user
 pip3 install boto3 --user
 
 mkdir deploy_iac_tf_ansible
-mdkir deploy_iac_tf_ansible/ansible_templates
+mkdir deploy_iac_tf_ansible/ansible_templates
 mkdir deploy_iac_tf_ansible/ansible_templates/inventory_aws/
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/ansible.cfg
 wget https://raw.githubusercontent.com/bshukrallah/terraform/master/providers.tf

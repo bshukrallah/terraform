@@ -25,7 +25,7 @@ mv outputs.tf deploy_iac_tf_ansible/outputs.tf
 
 echo "Generating Key for AWS Instances"
 
-ssh-keygen -t rsa -f ~/.ssh/id_rsa -N ' ' <<<y
+ssh-keygen -t rsa -f ~/.ssh/id_rsa -N '' <<<y
 echo "This will now configure AWS"
 
 aws configure
